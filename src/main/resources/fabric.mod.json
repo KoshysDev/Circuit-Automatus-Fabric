@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "circuitautomatus",
+	"version": "${version}",
+	"name": "Circuit Automatus",
+	"description": "The Circuit Automatus mod expands the functionality of redstone in Minecraft, bringing advanced automation and logic capabilities to your builds. With this mod, you can create complex circuits and systems that respond to different conditions and triggers.",
+	"authors": [
+		"Koshys"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod",
+		"discord_link": "Koshys#9834"
+	},
+	"license": "MIT",
+	"icon": "assets/circuitautomatus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.koshys.circuitautomatus.CircutAutomatus"
+		],
+		"client": [
+			"net.koshys.circuitautomatus.CircutAutomatusClient"
+		],
+		"fabric-datagen": [
+			"net.koshys.circuitautomatus.CircutAutomatusDataGenerator"
+		]
+	},
+	"mixins": [
+		"circuitautomatus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
