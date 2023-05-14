@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": {"model":  "circuitautomatus:block/redstone_validator"}
+    "facing=north": {"model":  "circuitautomatus:block/redstone_validator"},
+    "facing=east": {"model":  "circuitautomatus:block/redstone_validator", "y": 90},
+    "facing=south": {"model":  "circuitautomatus:block/redstone_validator", "y": 180},
+    "facing=west": {"model":  "circuitautomatus:block/redstone_validator", "y": 270}
   }
 }

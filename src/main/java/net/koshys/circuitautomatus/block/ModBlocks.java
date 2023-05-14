@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.koshys.circuitautomatus.CircutAutomatus;
+import net.koshys.circuitautomatus.block.custom.RedstoneValidatorBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -19,7 +20,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block REDSTONE_VALIDATOR_BLOCK = registerBlock("redstone_validator",
-            new Block(FabricBlockSettings.of(Material.DECORATION).breakInstantly().sounds(BlockSoundGroup.WOOD)),
+            new RedstoneValidatorBlock(FabricBlockSettings.of(Material.DECORATION).breakInstantly().sounds(BlockSoundGroup.WOOD)),
             ItemGroups.REDSTONE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
